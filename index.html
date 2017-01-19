@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Thrifty Gifties</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		
+		<h1>Thrifty Gifties</h1>
+		<h2>Holiday Gift Budgeting Tool</h2>
+		
+		<div class="hide-on-submit">
+			
+			<h3>Your generous spirit shouldn't put you in debt! Let's make a plan to stay on budget this holiday season.</h3>
+
+			<form class="budget-amount">
+				
+				<label for="gift-fund">What is your total gift budget this year?</label>
+				<input type="text" id="gift-fund">
+
+				<button class="initial-submit">Let's begin!</button>
+				
+			</form>
+		
+		</div><!-- /.hide-on-submit -->
+
+		<div class="reveal">
+			
+			<h3>Fill in the list below to see if you're on budget!</h3>
+			
+			<form class="update-budget-amount" action="">
+				<label for="update">Update total gift budget</label>
+				<input type="text" id="update" class="update-gift-fund">
+				<button class="update-submit">Update amount</button>
+				
+			</form>
+
+			<div class="gift-list">
+
+				<h3>My Gift List</h3>
+
+				<div class="name-tag">
+					<p>Name</p>
+				</div><!-- /.name-tag -->
+
+				<div class="gift-tag">
+					<p>Gift</p>
+				</div><!-- /.gift-tag -->
+
+				<div class="price-tag">
+					<p>Price</p>
+				</div><!-- /.price-tag -->
+				<div class="row-holder">
+					
+					<div class="row clearfix">
+						
+						<div class="delete"><i class="fa fa-times"></i></div>
+						<input type="text" id="name" class="name-input" placeholder="Recipient name">
+						<input type="text" id="gift-description" class="gift-input" placeholder="Gift description">
+						<input type="text" id="price" class="price-input" placeholder="Gift price (pre-tax)">
+					</div><!-- /.row -->
+
+					<div class="row">
+						<div class="delete"><i class="fa fa-times"></i></div>
+						<input type="text" id="name" class="name-input" placeholder="Recipient name">
+						<input type="text" id="gift-description" class="gift-input" placeholder="Gift description">
+						<input type="text" id="price" class="price-input" placeholder="Gift price (pre-tax)">
+					</div><!-- /.row -->
+
+					<div class="row">
+						<div class="delete"><i class="fa fa-times"></i></div>
+						<input type="text" id="name" class="name-input" placeholder="Recipient name">
+						<input type="text" id="gift-description" class="gift-input" placeholder="Gift description">
+						<input type="text" id="price" class="price-input" placeholder="Gift price (pre-tax)">
+					</div><!-- /.row -->
+
+					<div class="row">
+						<div class="delete"><i class="fa fa-times"></i></div>
+						<input type="text" id="name" class="name-input" placeholder="Recipient name">
+						<input type="text" id="gift-description" class="gift-input" placeholder="Gift description">
+						<input type="text" id="price" class="price-input" placeholder="Gift price (pre-tax)">
+					</div><!-- /.row -->
+
+					<div class="row">
+						<div class="delete"><i class="fa fa-times"></i></div>
+						<input type="text" id="name" class="name-input" placeholder="Recipient name">
+						<input type="text" id="gift-description" class="gift-input" placeholder="Gift description">
+						<input type="text" id="price" class="price-input" placeholder="Gift price (pre-tax)">
+					</div><!-- /.row -->
+
+					<div class="row">
+						<div class="delete"><i class="fa fa-times"></i></div>
+						<input type="text" id="name" class="name-input" placeholder="Recipient name">
+						<input type="text" id="gift-description" class="gift-input" placeholder="Gift description">
+						<input type="text" id="price" class="price-input" placeholder="Gift price (pre-tax)">
+					</div><!-- /.row -->
+
+				</div><!-- /.row-holder -->
+
+				<button class="add-rows">Add more rows</button>
+				<div class="total">
+					<span class="subtotal-tag">Subtotal</span>
+					<span class="subtotal">$0.00</span>
+					<span class="block"></span>
+					<span class="tax-tag">HST (tax)</span>
+					<span class="tax">$0.00</span>
+					<span class="block"></span>
+					<span class="total-tag">Total including tax:</span>
+					<span class="tax-total">$0.00</span>
+				</div>
+
+
+			</div><!-- /.gift-list -->
+
+			<div class="value-bar-holder">
+				<div class="value-bar">
+					<span class="remaining"></span>
+				</div>
+				
+			</div><!-- /.value-bar-holder -->
+
+		</div><!-- /.reveal -->
+
+	</div><!-- /.wrapper -->
+
+<!-- SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/thrifty_gifties.js"></script>
+	
+</body>
+</html>
